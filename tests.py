@@ -53,3 +53,26 @@ class RectangleTestCase(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+'''
+
+# 1. Круг (circle.py)
+python3 -c "from circle import area, perimeter; print(area(5)); print(perimeter(5))"
+# Ожидаемый вывод: 78.53981633974483 и 31.41592653589793
+
+# 2. Прямоугольник (rectangle.py)
+python3 -c "from rectangle import area, perimeter; print(area(10, 5)); print(perimeter(10, 5))"
+# Ожидаемый вывод: 50 и 30
+
+# 3. Квадрат (square.py)
+python3 -c "from square import area, perimeter; print(area(4)); print(perimeter(4))"
+# Ожидаемый вывод: 16 и 16
+
+# 4. Треугольник (triangle.py) — площадь по основанию и высоте, периметр по трём сторонам
+python3 -c "from triangle import area, perimeter; print(area(6, 4)); print(perimeter(3, 4, 5))"
+# Ожидаемый вывод: 12.0 и 12
+
+python3 -m unittest tests.py -v
+
+'''
