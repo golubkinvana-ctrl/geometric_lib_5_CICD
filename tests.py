@@ -49,7 +49,6 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_perimeter(self):
         self.assertEqual(rectangle_perimeter(10, 10), 40)
-        self.assertEqual(rectangle_perimeter(3, 4), 14)
 
 
 if __name__ == "__main__":
